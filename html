@@ -1,0 +1,161 @@
+# EnetityRelationship
+<div class="ent" id="BusinessEntityContect(Person)">
+  <ul class="fk"><li>BusinessEntityID</li>
+    <li>BusinessEntityID</li>
+    <li>PersonID</li>
+    <li>ContactTypeID</li>
+	</ul>
+  <ul class="cols">
+    <li>rowguid</li>
+    <li>modifiedData</li>
+	</ul>
+</div>
+
+<div class="ent" id="ContectType(Person)">
+  <ul class="fk"><li>ContectTypeID</li>
+    <li>ContectTypeID</li>
+	</ul>
+  <ul class="cols">
+    <li>name</li>
+    <li>modifiedData</li>
+	</ul>
+</div>
+
+<div class="ent" id="BusinessEntity(Person)">
+  <ul class="fk"><li>BusinessEntityID</li>
+    <li>BusinessEntityID</li>
+	</ul>
+  <ul class="cols">
+    <li>rowguid</li>
+    <li>modifiedData</li>
+	</ul>
+</div>
+
+<div class="ent" id="BusinessEntityAddress(Person)">
+  <ul class="fk"><li>BusinessEntityID</li>
+    <li>BusinessEntityID</li>
+<li>AddressID</li>
+    <li>AddressTypeID</li>
+	</ul>
+  <ul class="cols">
+    <li>rowguid</li>
+    <li>modifiedData</li>
+	</ul>
+</div>
+
+<div class="ent" id="AddressType(Person)">
+  <ul class="fk"><li>AddressTypeID</li>
+    <li>ContectTypeID</li>
+	</ul>
+  <ul class="cols">
+    <li>name</li>
+    <li>rowguid</li>
+    <li>modifiedData</li>
+	</ul>
+</div>
+
+<div class="ent" id="StateProvince(Person)">
+  <ul class="fk">
+    <li>StateProvinceID</li>
+	</ul>
+  <ul class="cols">
+     <li>StateProvinceCode</li>
+    <li>ContryRegionCode</li>
+    <li>IsOnlyStateProvinceFlag</li>
+    <li>Name</li>
+     <li>TerritoryID</li>
+     <li>Rowguid</li>
+    <li>ModifiedData</li>
+</div>
+
+  
+  <div class="ent" id="Address(Person)">
+  <ul class="fk">
+    <li>AddressID</li>
+	</ul>
+  <ul class="cols">
+    <li>AddressLine1</li>
+     <li>AddressLine2</li>
+    <li>City</li>
+    <li>StateProvinceID</li>
+    <li>PostalCode</li>
+     <li>SpatialLocation</li>
+     <li>Rowguid</li>
+    <li>ModifiedData</li>
+</div>
+
+    <div class="ent" id="ContryRegion(person)">
+  <ul class="fk">
+    <li>ContryRegionCode</li>
+	</ul>
+  <ul class="cols">
+    <li>Name</li>
+    <li>ModifiedData</li>
+	</ul>
+</div>
+    
+        <div class="ent" id="PersonPhone(person)">
+  <ul class="fk">
+    <li>BusinessEntityID</li>
+     <li>PhoneNumber</li> <li>PhoneNumberTypeID</li>
+	</ul>
+  <ul class="cols">
+     <li>ModifiedData</li>
+	</ul>
+</div>
+    
+    <div class="ent" id="Person(Person)">
+  <ul class="fk">
+    <li>BusinessEntityID</li>
+	</ul>
+  <ul class="cols">
+     <li>PersonType</li>
+    <li>NameStyle</li>
+    <li>Title</li>
+    <li>FirstName</li>
+     <li>MiddleName</li>
+    <li>LastName</li>
+    <li>Suffix</li>
+    <li>EmailPromotion</li>
+    <li>AdditionalContactinfo</li>
+    <li>Demographics</li>
+     <li>Rowguid</li>
+    <li>ModifiedData</li>
+</div>
+    
+  <div class="ent" id="Password(person)">
+  <ul class="fk">
+    <li>BusinessEntityID</li>
+ 
+	</ul>
+  <ul class="cols">
+     <li>PasswordHash</li>
+    <li>PasswordSalt</li>
+    <li>Rowguid</li>
+    <li>ModifiedData</li>
+	</ul>
+</div>
+  
+    
+<div class="ent" id="PhoneNumberType(person)">
+  <ul class="fk">
+    <li>PhoneNUmberTypeID</li>
+	</ul>
+  <ul class="cols">
+    <li>Rowguid</li>
+    <li>ModifiedData</li>
+	</ul>
+</div>
+        
+ <div class="ent" id="EmaliAddress(person)">
+  <ul class="fk">
+    <li>BusinessEntityID</li>
+    <li>EmailAddressID</li>
+	</ul>
+  <ul class="cols">
+    <li>EmailAddress</li>
+    <li>Rowguid</li>
+    <li>ModifiedData</li>
+	</ul>
+</div>   
+      
